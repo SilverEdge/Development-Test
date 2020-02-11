@@ -1,0 +1,250 @@
+.adt-container{
+    background: red;
+    transition: transform .5s;
+}
+
+
+.person div{
+    position:absolute;
+    margin-left:50vw;
+    margin-top:50vh;
+    font-size:12px;
+    background-color:white;
+    box-shadow: 3px 0px 12px 0px #eeefee;
+    border-radius: 10px;
+    text-align: center;
+    transition: margin-top .5s;
+}
+
+.personIdHeader{
+    top:-160px;
+    left:-520px;
+    width:50px;
+    height:30px;
+    line-height: 30px;
+    transition:top .5s,left .5s;
+}
+
+.personNameHeader{
+    top:-160px;
+    left:-460px;
+    width:200px;
+    height:30px;
+    line-height: 30px;
+    transition:top .5s,left .5s;
+}
+
+.personEmailHeader{
+    top:-160px;
+    left:-250px;
+    width:200px;
+    height:30px;
+    line-height: 30px;
+    transition:top .5s,left .5s;
+}
+
+.personId{
+    top:-120px;
+    left:-520px;
+    width:50px;
+    height:200px;
+    transition:top .5s,left .5s;
+}
+
+.personName{
+    top:-120px;
+    left:-460px;
+    width:200px;
+    height:200px;
+    transition:top .5s,left .5s;
+}
+
+.personEmail{
+    top:-120px;
+    left:-250px;
+    width:200px;
+    height:200px;
+    transition:top .5s,left .5s;
+}
+
+button {
+    position: absolute;
+    border-radius: 10px;
+    font-size: 10px;
+    background: #548ea8;
+    font-weight: 800;
+    color:white;
+    padding: 15px 45px;
+    width:200px;
+    transition: background-color .2s ease, color .2s ease;
+    transition: top .5s, left .5s, margin-top .5s;
+    border: 0px;
+    box-shadow:0px 1px 1px 0px #ccc;
+    margin-top:50vh;
+    margin-left:50vw;
+    top:122px;
+    left:-250px;
+
+    &:hover {
+        background: #ffffff;
+        color:#548ea8;
+        cursor: pointer;
+    }
+}
+
+.container{
+    position:absolute;
+    margin-top: 50vh;
+    margin-left: 50vw;
+    left:50px;
+    float:left;
+    width: 560px;
+    height: 125px;
+    background: white;
+    overflow:hidden;
+    font-family:'arial';
+    font-size:14px;
+    font-weight:500;
+    transition: left .5s, top .5s, transform .5s, margin-top .5s;
+
+    .pic:not(:last-child){
+        margin-right:15px;
+    }
+}
+        
+.containerTop {
+    top:-70px; 
+    transition:top .5s;
+}
+
+.containerBottom {
+    top:70px;
+    transition:top .5s;
+}
+        
+.pic{
+    position:relative;
+    color:white;
+    float:left;
+    width: 100px;
+    height: 125px;
+    transition: top .5s, color .4s .2s;
+
+    &:hover{
+        top: 0px;
+        color:black;
+    }
+    
+    img{
+        position: absolute;
+        left: 0;
+        width:100px;
+        height:100px;
+    }
+}
+
+.picTop {
+    top:25px;
+
+    img {
+        top: 0;
+    }
+}
+        
+.picBottom {
+    top:-25px;
+
+    img {
+        bottom: 0;
+    }
+}
+
+.name{
+    position:absolute;
+    left:0px;
+    width:100px;
+    text-align:center;
+}
+
+.nameTop{
+    bottom:0px;
+}
+
+.nameBottom{
+    top:0px;
+}
+
+.text{
+    position: absolute;
+    line-height: 0px;
+    height:50px;
+    width:360px;
+    color:#548ea8;
+    background-color: none;
+    margin-left:50vw;
+    left:60px;
+    margin-top:50vh;
+    top:-180px;
+    transition:top .5s, left .5s, transform .5s, margin-top .5s;
+}
+
+@media only screen and (max-width: 1250px) {
+    
+    .person div{
+        position:absolute;
+        margin-left:50vw;
+        margin-top:0;
+    }
+    .personIdHeader{
+        top:40px;
+        left:-235px;
+    }
+    .personNameHeader{
+        top:40px;
+        left:-175px;
+    }
+    .personEmailHeader{
+        top:40px;
+        left:35px;
+    }
+    .personId{
+        top:80px;
+        left:-235px;
+    }
+    .personName{
+        top:80px;
+        left:-175px;
+    }
+    .personEmail{
+        top:80px;
+        left:35px;
+    }
+    button {
+        margin-top:0px;
+        top:328px;
+        left:35px;
+    }
+    .container{
+        margin-top: 0px;
+        left:-280px;
+        transform: scale(0.84);
+    }
+    .containerTop {
+        top:390px; 
+    }
+    .containerBottom {
+        top:507px;
+    }
+    .text{
+        margin-top:0;
+        top:325px;
+        left:-312px;
+        transform: scale(0.5);
+    }
+}
+
+  @media only screen and (max-width: 580px) {
+    .adt-container{
+        transform: scale(.6);
+    }
+}
