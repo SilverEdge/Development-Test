@@ -67,7 +67,7 @@
     transition:top .5s,left .5s;
 }
 
-button {
+.btnAPI {
     position: absolute;
     border-radius: 10px;
     font-size: 10px;
@@ -219,7 +219,7 @@ button {
         top:80px;
         left:35px;
     }
-    button {
+    .btnAPI {
         margin-top:0px;
         top:328px;
         left:35px;

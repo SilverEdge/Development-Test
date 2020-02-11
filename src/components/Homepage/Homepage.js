@@ -30,7 +30,7 @@ class Homepage extends Component {
                 <h1>ArtVersion Development Test</h1>
                 <p>Use this page to help you construct the component you will be using for your development test if you are not familiar with react.<br/>
                 It contains everything you will need to complete this challenge.</p>
-                <button onClick={this.newAction}>Test Page</button>
+                <button class="btnGo" onClick={this.newAction}>Test Page</button>
             </div>
         );
     }

@@ -113,7 +113,7 @@ class ArtVersionDevelopmentTest extends Component {
                 
                 </div>
 
-                <button onClick={this.otherAction}>GENERATE NAMES</button>
+                <button class="btnAPI" onClick={this.otherAction}>GENERATE NAMES</button>
 
                 <div class='text'>
                     <h1>{this.state.text}|</h1>
